@@ -22,10 +22,8 @@
     }
   }
 }
-
-
 .other-half {
-  height: 50vh;
+  height: 40vh;
   .form-group {
     display: flex;
     justify-content: center;
@@ -38,4 +36,9 @@
     display: flex;
     justify-content: center;
   }
+}
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
 }
