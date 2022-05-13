@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-english-ontime';
+  public gameInProgress: boolean = true
+  public typeEnding: string
+
+  endGame(type: string) {
+    this.gameInProgress = false
+    this.typeEnding = type
+  }
+
+  restartGame() {
+    this.gameInProgress = true
+    this.typeEnding = undefined
+  }
 }

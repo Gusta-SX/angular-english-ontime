@@ -1,0 +1,41 @@
+.half {
+  height: 50vh;
+  .prog-tries {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    div {
+      width: 40%;
+    }
+  }
+  .phrase {
+    height: 40vh;
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+.other-half {
+  height: 50vh;
+  .form-group {
+    display: flex;
+    justify-content: center;
+    input {
+      width: 50%;
+    }
+  }
+  .d-flex {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,32 @@
+<section class="panel-content">
+  <div class="half">
+    <div class="row prog-tries">
+      <div>
+        <app-progress [progress]="progress"></app-progress>
+      </div>
+      <div>
+        <app-tries [tries]="tries"></app-tries>
+      </div>
+    </div>
+  
+    <div class="row phrase">
+      <div class="col">
+        <h6>{{instruction}}</h6>
+        <h3>{{roundPhrase.phraseEng}}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="other-half">
+    <div class="col">
+      <div class="form-group shadow-textarea">
+        <input rows="3" class="md-input form-control" (input)="updateAnswer($event)" placeholder="Insira sua resposta" [value]="answer">
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex">
+        <button type="button" class="btn btn-primary mr-1" (click)="checkAnswer()">Traduzir</button>
+      </div>
+    </div>
+  </div>
+</section>
